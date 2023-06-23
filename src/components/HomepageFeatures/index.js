@@ -3,7 +3,7 @@ import clsx from "clsx";
 import styles from "./styles.module.css";
 import tooTsai from "@site/static/img/tooTsaiIsLuv.jpeg";
 import mountainClimbing from "@site/static/img/mountainClimbing.jpeg";
-import realGang from "@site/static/img/engineerIsWhoIAm.JPG";
+import realGang from "@site/static/img/engineerIsWhoIAm.jpg";
 const FeatureList = [
   {
     title: "Loving and Family power",
