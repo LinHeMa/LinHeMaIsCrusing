@@ -1,48 +1,51 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
-
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
+import tooTsai from "@site/static/img/tooTsaiIsLuv.jpeg";
+import mountainClimbing from "@site/static/img/mountainClimbing.jpeg";
+import realGang from "@site/static/img/engineerIsWhoIAm.JPG";
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Loving and Family power",
+    pic: tooTsai,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        LinHeMa loves will always put his family and friends at No.1 place. And
+        his dog TooTsai at No.0 place.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Outdoor",
+    pic: mountainClimbing,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <>Apart from coding, LinHeMa also enjoys outdoor activities.</>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Solving Real World Problems",
+    pic: realGang,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        As a developer, Carpal Tunnel Syndrome needs to be dealt with.LinHeMa
+        using his tech Brain with some basic welding technology, fixing his
+        wrists.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description, pic }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className={`${clsx("col col--4")} justify-between space-y-4` }>
+      <div
+        className="text--center "
+      >
+        <img src={pic} />
+        {/* <Svg className={styles.featureSvg} role="img" /> */}
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3 className="text-xl font-bold">{title}</h3>
         <p>{description}</p>
       </div>
     </div>

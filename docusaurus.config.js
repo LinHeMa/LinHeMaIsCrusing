@@ -7,14 +7,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "LinHeMa blog",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  tagline: "LinHeMa is way coooooooler",
+  favicon: "img/tooTsaiIsLuv.jpeg",
 
   // Set the production url of your site here
   url: "https://github.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/my-website/",
+  baseUrl: "/LinHeMaIsCrusing/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -32,7 +32,19 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
+  plugins: [
+    async function myPlugin(context, options) {
+      return {
+        name: "docusaurus-tailwindcss",
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
   presets: [
     [
       "classic",
