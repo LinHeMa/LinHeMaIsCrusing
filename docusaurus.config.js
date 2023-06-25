@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "LinHeMa blog",
   tagline: "LinHeMa is way coooooooler",
-  favicon: "img/tooTsaiIsLuv.jpeg",
+  favicon: "img/blogIcon.ico",
 
   // Set the production url of your site here
   url: "https://github.com",
@@ -80,7 +80,7 @@ const config = {
         title: "荷馬的筆記",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/blogIcon.ico",
         },
         items: [
           {
