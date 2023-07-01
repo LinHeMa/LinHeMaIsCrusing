@@ -77,7 +77,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "荷馬的筆記",
+        title: "荷馬的網站",
         logo: {
           alt: "My Site Logo",
           src: "img/hm.png",
@@ -89,7 +89,7 @@ const config = {
             position: "left",
             label: "文章列表",
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          { to: "/blog", label: "荷馬隨筆🦛", position: "left" },
           {
             href: "https://github.com/LinHeMa/my-website",
             label: "我的 GitHub",

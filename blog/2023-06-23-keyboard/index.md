@@ -3,6 +3,7 @@ slug: 務實42組裝心得
 title: 務實42組裝心得
 authors: [LinHeMa]
 tags: [craft]
+enableComments: true
 ---
 
 #  務實42組裝心得
